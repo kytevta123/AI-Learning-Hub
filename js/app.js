@@ -104,3 +104,26 @@ function showToast(message) {
         toast.style.opacity = '0';
     }, 2500);
 }
+
+// Hamburger Mobile Menu Toggle Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    if (hamburger && navMenu) {
+        // Toggle menu visibility
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-active');
+            hamburger.classList.toggle('toggle');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('nav-active');
+                hamburger.classList.remove('toggle');
+            });
+        });
+    }
+});

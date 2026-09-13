@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Student AI Learning Hub</title>
-    <!-- Font Awesome Icons for Futuristic Look -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<header class="navbar">
+    <div class="logo">
+        <i class="fas fa-graduation-cap"></i> AI <span>Hub</span>
+    </div>
+
+    <!-- Hamburger Toggle Button for Mobile -->
+    <button class="hamburger" id="hamburger-toggle" aria-label="Toggle Navigation">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav id="nav-menu">
+        <a href="#hero" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+        <a href="#quiz-section" class="nav-link"><i class="fas fa-vial"></i> Quizzes</a>
+        <a href="#timer-section" class="nav-link"><i class="fas fa-stopwatch"></i> Timer</a>
+        <a href="#progress-section" class="nav-link"><i class="fas fa-chart-line"></i> Progress</a>
+    </nav>
+
+    <div class="user-profile">
+        <i class="fas fa-user-circle"></i> Student
+    </div>
+</header>
 <body>
 
     <!-- Top Navigation Bar -->
